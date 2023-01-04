@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, rgb(122, 122, 248), rgba(51, 51, 51, 0.678));
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+main {
+    min-width: 280px;
+    max-width: 650px;
+    margin: auto;
+    background-color: rgba(252, 244, 176, 0.979);
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 255, 0.219);
+    border-radius: 10px;
+    text-align: center;
+    outline: 1px solid black ;
+}
+
+h2 {
+    color: darkblue;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.295);
+}
+
+h1 {
+    color: darkblue;
+    background-color: rgba(252, 244, 176, 0.979);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.075);
+    text-align: center;
+    outline: 1px solid black ;
+}
+
+hr {
+    background-color: rgba(252, 244, 176, 0.979);
+    height: 3px;
+    outline: 1px solid black ;
+}
+
+.basica {
+    color: rgba(0, 0, 139, 0.836);
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+div {
+    max-width: 650px;
+    min-width: 280px;
+    border-radius: 2px;
+    margin: auto; 
+}
+
+div > .p1 {
+    display: none;
+}  
+
+div:hover > .p1 {
+    display: block;
+}
+
+.p1 {
+    max-width: 650px;
+    min-width: 280px;
+    background-color: rgba(252, 244, 176, 0.979) ;
+    color: black;
+    padding: 2px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+ul {
+    text-align: justify;
+}
+
+.p2 {
+    color: darkred;
+    background-color: rgba(117, 115, 115, 0.075);
+    font-size: 15px;
+    text-indent: 6px;  
+}
+
+
+
+

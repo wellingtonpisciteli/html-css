@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="minhalogo-ico.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinânimicas</h1>
+        <p>
+            Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+        </p>
+
+        <picture>
+            <source media="(max-width: 150px)" srcset="imagens/foto-pp.png" type="image/png">
+            <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexivel">
+        </picture>
+
+        <h1>Áudios</h1>
+            <p>Reproduzindo áudio em HTML5.</p>
+            <audio preload="metadata" controls>
+                <source src="midia/teste-audio.mp3" type="audio/mpeg">
+                <source src="midia/teste-audio.ogg" type="audio/ogg">
+                <p>Infelismente não foi possivel reproduzir o áudio. <hr>
+                Baixe o arquivo do áudio aqui <a href="midia/audio-zip.zip" download="audio-zip.zip" type="aplication/zip">DOWNLOAD</a>
+            </audio>
+            <p>
+                Baixe o arquivo do áudio aqui <a href="midia/audio-zip.zip" download="audio-zip.zip" type="aplication/zip">DOWNLOAD</a>
+            </p>         
+</body>
+</html>

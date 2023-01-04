@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: darkslategrey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        nav {
+            background-color: rgba(95, 158, 160, 0.466);
+            padding: 1px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
+            
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        nav > a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px 5px 0px 0px;
+            margin-bottom: -5px;
+        }
+        header > h1 {
+            color: rgb(0, 0, 0);
+            background-color: darkgray;
+            width: 135px;
+            text-indent: 2px;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.288);
+        }
+        main {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 0px 0px 5px 5px;
+        }
+        #assuntos > p {
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-decoration: underline red;
+        }
+        article {
+            background-color: darkgrey;
+            padding: 10px ;
+        }
+        aside {
+            background-color: rgba(95, 158, 160, 0.466);
+            color: rgb(0, 0, 0);
+            width: 120px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: black;
+            color: rgb(187, 187, 187);
+            margin: 0px;
+            text-align: center;
+            padding: 4px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes, políticas e tecnologias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto ea suscipit laudantium voluptas esse impedit eveniet sint aliquam sunt? Autem ut corrupti dolore minima, repellendus vitae quo eaque quos.
+                </p>
+                <aside>
+                    escrito por Well
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            Desenvolvido por Well
+        </p>
+    </footer>
+  
+</body>
+</html>
