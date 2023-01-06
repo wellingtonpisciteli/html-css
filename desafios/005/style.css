@@ -84,6 +84,10 @@ ul {
     text-indent: 6px;  
 }
 
+.p2:hover {
+    cursor: alias;
+}
+
 
 
 
