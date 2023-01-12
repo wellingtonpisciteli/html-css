@@ -6,120 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        #container {
+            position: relative;
+
             background-color: blueviolet;
-        }
-
-        header h1 {
-            background-color: white;
-            text-align: center;
-            font-size: 2em;
-        }
-
-        section {
-            position: relative;
-            margin: auto;
-            background-color: white;
-            max-width: 500px;
-            height: 258px;
-        }
-
-        #foto {
-            background-image: url(https://avatars.githubusercontent.com/u/115740592?v=4);
+            background-image: url(imagens/target001.png);
             background-repeat: no-repeat;
-            background-size: 250px;
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            height: 250px;
-            width: 250px;
-            background-color: yellow;
-        }
+            background-size: 100% 100%;
 
-        #eu {
-            position: absolute;
-            top: 20px;
-            left: 275px;
-            background-color: white;
-        }
-
-        #seta {
-            position: absolute;
-            background-image: url(https://icones.pro/wp-content/uploads/2021/02/icone-de-fleche-vers-le-bas-rose.png);
-            background-repeat: no-repeat;
-            background-size: 100px;
-            top: 85px;
-            left: 310px;
-            width: 100px;
-            height: 100px;
-        }
-
-        main {
-            position: relative;
-            max-width: 700px;
-            margin: auto;
-            background-color: white;
-        
-        }
-
-        main #descubra {
-            color: brown;
-            position: absolute;
-            width: 100px;
-            top: -25px;
-            left: 430px;
-        }
-
-
-        main #sobremim {
-            position: absolute;
-            top: 10px;
-            background-color: white;
+            height: 98vh;
             padding: 10px;
         }
 
-        main #sobremim {
-            display: none;
+        #conteudo {
+            position: absolute;
+
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            height: 250px;
+            width: 250px;
+ 
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%) ;
         }
-
-        main:hover > #sobremim {
-            display: block;
-            
-        }
-
-
-       
-
-       
-
     </style>
-
 </head>
 <body>
-    <header>
-        <h1>MINHAS REDES SOCIAIS</h1>
-    </header>
-    <section>
-        <div id="foto">
-
-        </div>
-        <div id="eu">
-            <h2>QUEM EU SOU?</h2>
-        </div>
-        <div id="seta">
+    <section id="container">
+        <div id="conteudo">
 
         </div>
     </section>
-    <main>
-      
-            <div id="descubra">
-                Descubra...
-            </div>
 
-            <p id="sobremim">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde officiis iure dicta. Autem similique laudantium iure tenetur enim, facilis amet tempora debitis deleniti ab ratione? Ipsa quidem nam inventore?
-            </p>
-      
-    </main>
 </body>
 </html>
