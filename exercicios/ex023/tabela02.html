@@ -10,30 +10,59 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-weight: bold;
+            padding: 10px;
+        }
+
         table {
             border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
         }
 
         thead, tfoot {
-            background-color: rgba(255, 140, 0, 0.521);
+            background-color: black;
+            color: white;
         }
 
-        th, td, td {
-            text-align: left;
+        tbody > tr:nth-child(2n) {
+            background-color: darkgray;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td {
             border: 1px solid black;
             padding: 8px;
         }     
 
         .nume {
             text-align: right;
+            width: 80px;
         }
     </style>
 </head>
 <body>
     <table>
+        <caption>
+            População das unidades federativas
+        </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
         </thead>
 
         <tbody>
@@ -61,11 +90,19 @@
                 <td>Santa Catarina</td>
                 <td class="nume">86.128,113</td>
             </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="nume">55.999,059</td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="nume">75.919,055</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="nume">2344.322,344</td>
             </tr>
         </tfoot>
