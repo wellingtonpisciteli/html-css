@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body onresize="tamanhoTela()">
     <header>
         <h1>Meu site</h1>
         <i id="icon" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -38,6 +39,15 @@
             }
             else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function tamanhoTela() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
             }
         }
     </script>

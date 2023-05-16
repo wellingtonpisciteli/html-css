@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*telas pequenas: até 600px
+dispositivos móveis: 600 a 768px
+tablet: 768 a 992px
+pc: 992 a 1200px
+telas grandes: acima de 1200px*/
+
+@media screen and (min-width: 768px) {
+    i#icon {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        max-width: 768px;
+    }
+}

@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/*telas pequenas: até 600px
+dispositivos móveis: 600 a 768px
+tablet: 768 a 992px
+pc: 992 a 1200px
+telas grandes: acima de 1200px*/
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -35,6 +41,7 @@ header > h1 {
 
 menu {
     display: none;
+    background-image: linear-gradient(to right, black, rgba(255, 255, 255, 0.829));
 }
 
 menu > ul {
@@ -45,7 +52,7 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgba(87, 87, 87);
+    background-color: rgba(0, 0, 0, 0.233);
     color: white;
     text-align: center;
     border: 2px solid grey;
